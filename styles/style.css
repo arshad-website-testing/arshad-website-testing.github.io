@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.color-dark {
+    color: rgb(8, 0, 255);
+}
+
+.color-lite {
+    color: rgb(255, 255, 255);
+}
+
+.bg-color-dark {
+    background-color: rgb(8, 0, 255);
+}
+
+.bg-color-lite {
+    background-color: rgb(255, 202, 178);
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-part {
+    background-image: url("../images/intro-desktop.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.cursor-link {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .intro-part {
+        background-image: url("../images/intro-mobile.png");
+        width: 100%;
+    }
+}
