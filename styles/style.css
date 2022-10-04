@@ -31,9 +31,17 @@ html {
 
 .flex-center {
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.responsive-paras {
+    width: 70%;
+    margin: 10px;
+    text-align: justify;
 }
 
 .intro-part {
@@ -42,18 +50,43 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 700px;
+    height: 100vh;
     width: 100%;
+}
+
+.intro-text {
+    font-size: 50px;
+    padding: 30px;
 }
 
 .cursor-link {
     cursor: pointer;
 }
 
+.flex-center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 @media only screen and (max-width: 700px) {
     .intro-part {
         background-image: url("../images/intro-mobile.png");
         width: 100%;
-        height: 600px;
+    }
+    .responsive-paras {
+        width: 95%;
+        margin: 5px;
+    }
+    .flex-center-row {
+        flex-direction: column;
+    }
+    .intro-text {
+        font-size: 25px;
+        margin: 10px;
+    }
+    header {
+        margin-bottom: -9px;
     }
 }
