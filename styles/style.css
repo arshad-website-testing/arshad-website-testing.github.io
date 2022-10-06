@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .color-dark {
     color: rgb(8, 0, 255);
 }
@@ -88,5 +92,34 @@ html {
     }
     header {
         margin-bottom: -9px;
+    }
+}
+
+
+/* SUB PAGES STYLE  */
+
+.car-intro-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64vh;
+}
+
+.car-intro-img #car-pic-1,
+.car-intro-img #car-pic-2 {
+    height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .car-intro-img {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        flex-flow: column-reverse;
+    }
+    .car-intro-img #car-pic-1,
+    .car-intro-img #car-pic-2 {
+        width: fit-content;
+        height: 27vh;
     }
 }
