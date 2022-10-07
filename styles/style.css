@@ -93,6 +93,9 @@ body {
     header {
         margin-bottom: -9px;
     }
+    .not-in-mobile {
+        display: none;
+    }
 }
 
 
@@ -110,6 +113,20 @@ body {
     height: 100%;
 }
 
+.wedding-intro-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-in-desktop {
+    display: none;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
 @media only screen and (max-width: 700px) {
     .car-intro-img {
         flex-direction: column;
@@ -121,5 +138,8 @@ body {
     .car-intro-img #car-pic-2 {
         width: fit-content;
         height: 27vh;
+    }
+    .not-in-desktop {
+        display: block;
     }
 }

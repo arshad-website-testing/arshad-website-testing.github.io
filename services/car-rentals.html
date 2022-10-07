@@ -128,8 +128,8 @@
                     <h1 class="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900">CONNECT WITH US</h1>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Your requirement is our primary priority. Submit your details. We will reach you shortly.</p>
                 </div>
-                <form method="POST" onsubmit="return disable_services()" name="services-sheet">
-                    <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
+                <form method="POST" onsubmit="return disable_services()" name="car-rent-sheet">
+                    <div class=" mb-5 flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
 
                         <div class="relative flex-grow w-full">
                             <label for="full-name" class="leading-7 text-sm text-gray-900">Full Name</label>
@@ -140,7 +140,7 @@
                             <input required type="email" id="email" name="E-Mail" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         </div>
                     </div>
-                    <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
+                    <div class=" mb-5 flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
 
                         <div class="relative flex-grow w-full">
                             <label for="full-name" class="leading-7 text-sm text-gray-900">Contact No.</label>
@@ -159,7 +159,7 @@
                     </div>
                     <br>
                     <button required type="submit" value="submit" id="submit-btn" name="submit" ; class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
-                    <p id="servicesDiv" class="leading-relaxed mb-8"></p>
+                    <p id="carRentDiv" class="leading-relaxed mb-8"></p>
                 </form>
             </div>
         </section>
@@ -275,6 +275,32 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script>
+        const serviceURL = 'https://script.google.com/macros/s/AKfycbyJISfrW4reHYvrE91KAIntJNY-EvkmaHwsd8Flx_o69JJ3yEQJLMTQe9ovWetko2U/exec'
+        const carRentForm = document.forms['car-rent-sheet']
+
+        carRentForm.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(serviceURL, {
+                    method: 'POST',
+                    body: new FormData(carRentForm)
+                })
+                .then(response => document.getElementById('carRentDiv').innerHTML = '<h3 style= "text-align:center; color:red;">We successfully received your request. We will contact you within short time! </h3>')
+                .catch(error => alert("Something Went Wrong. Please Try Again."))
+        })
+
+        function disable_services() {
+            if (document.forms["car-rent-sheet"]["Name"].value != '' && document.forms["car-rent-sheet"]["E-Mail"].value != '' && document.forms["car-rent-sheet"]["Address"].value != '' && document.forms["car-rent-sheet"]["Contact No."].value != '' && document.forms["car-rent-sheet"]["Date"].value != '') {
+                document.getElementById('carRentDiv').innerHTML = '<h3 style= "width:100%;text-align:center; color:red;">Hang On!!!';
+                document.getElementById('submit-btn').disabled = true;
+                document.getElementById('submit-btn').style.background = 'rgb(109, 107, 108)';
+                return true;
+            }
+        }
+    </script>
 </body>
 
 </html>
