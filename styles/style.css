@@ -71,6 +71,32 @@ body {
     /* width: 100%; */
 }
 
+.animate {
+    animation: scale 1.5s both;
+}
+
+@keyframes scale {
+    5% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate2 {
+    animation: opacity 0.5s both;
+}
+
+@keyframes opacity {
+    10% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .intro-text {
     font-size: 50px;
     padding: 30px;
