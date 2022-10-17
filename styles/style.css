@@ -61,14 +61,13 @@ body {
     text-align: justify;
 }
 
-.intro-part {
+.about-aavanto {
     background-image: url("../images/intro-desktop.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
-    /* width: 100%; */
+    height: fit-content
 }
 
 .animate {
@@ -113,6 +112,39 @@ body {
     flex-direction: row;
 }
 
+.scroll-left {
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    width: 100%;
+}
+
+.scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    /* Starting position */
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 15s linear infinite;
+}
+
+
+/* Move it (define the animation) */
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .intro-part {
         background-image: url("../images/intro-mobile.png");
@@ -140,6 +172,15 @@ body {
     }
     .width-manage {
         width: 95%;
+    }
+    .text-setter {
+        font-size: medium;
+        padding-bottom: 10px;
+    }
+    .margin-padding {
+        margin: 5px;
+        padding: 10px;
+        padding-right: 20px;
     }
 }
 
