@@ -74,6 +74,15 @@ body {
     height: fit-content
 }
 
+.bg-adder-testimonials {
+    background-image: url("../images/testimonials_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content
+}
+
 .animate {
     animation: scale 1.5s both;
 }
