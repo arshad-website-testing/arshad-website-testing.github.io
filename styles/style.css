@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-}
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html {
     scroll-behavior: smooth;
     font-family: 'Nunito', sans-serif;
@@ -22,6 +20,23 @@ body {
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
     font-weight: 490;
+}
+
+.mobile-padding-setter {
+    padding: 0 90px;
+}
+
+.padding-low {
+    padding: 0 60px;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .mobile-padding-setter {
+        padding: 0 5px;
+    }
+    .padding-low {
+        padding: 0;
+    }
 }
 
 .color-dark {
@@ -199,7 +214,7 @@ body {
         width: 75%;
     }
     #send-btn {
-        width: 15%;
+        width: 20%;
     }
 }
 
@@ -337,7 +352,7 @@ body {
     font-size: 14px;
     padding: 15px;
     background: white;
-    border-radius: 0 50px 50px 50px;
+    border-radius: 0 30px 30px 20px;
     margin-bottom: 10px;
 }
 

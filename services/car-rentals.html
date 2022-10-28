@@ -21,17 +21,19 @@
     <link rel="shortcut icon" href="../images/aavanto-logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
 <body>
-    <header class="text-gray-100 body-font bg-purple-900">
+    <header class="text-gray-100 mobile-padding-setter body-font bg-purple-900">
         <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../images/aavanto-logo.ico">
                 <span class="ml-3 text-xl text-gray-100">AAVANTO</span>
             </a>
-            <nav class="md:ml-auto text-lg flex flex-wrap items-center text-base justify-center">
+            <nav class="md:ml-auto text-lg flex flex-wrap items-center justify-center">
                 <a href="../index.html#about-aavanto" class="mr-5 hover:text-blue-200 cursor-link">About Us</a>
                 <a href="../index.html#services" class="mr-5 hover:text-blue-200 cursor-link">Services</a>
                 <a href="../index.html#contact-form" class="mr-5 hover:text-blue-200 cursor-link">Contact Us</a>
@@ -42,7 +44,7 @@
         <img id="car-pic-1" src="../images/car-rentals-desktop.png" alt="car">
         <img id="car-pic-2" src="../images/car-rentals-mobile.png" alt="car">
     </div>
-    <div id="about-us" class="about-us py-10">
+    <div id="about-us" class="about-us mobile-padding-setter py-10">
         <h1 class="text-4xl font-medium title-font mb-4 text-gray-900 flex-center">WHAT WE DO?</h1>
         <div class="paras flex-center">
             <div class="para-1 responsive-paras">
@@ -54,21 +56,21 @@
         </div>
     </div>
 
-    <section class="text-gray-900 body-font">
+    <section class="text-gray-900 mobile-padding-setter body-font">
         <div class="container px-5 py-10 mx-auto flex flex-wrap">
-            <h2 class="sm:text-2xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-1/5">Affordable, Convenient & Safe</h2>
+            <h2 class="sm:text-2xl text-2xl text-gray-900 font-medium text-center title-font mb-2 md:w-1/5">Affordable, Convenient & Safe</h2>
             <div class="md:w-4/5 md:pl-6">
-                <p class="sm:text-1xl leading-relaxed text-base">With AAVANTO, you can rent a car at a time that is convenient to you and get it delivered right to your doorstep. Apart from an hourly rate starting at just Rs. 33/hour, AAVANTO also offers flexible car rental services. You can choose
+                <p class="sm:text-1xl leading-relaxed text-base text-justify">With AAVANTO, you can rent a car at a time that is convenient to you and get it delivered right to your doorstep. Apart from an hourly rate starting at just Rs. 33/hour, AAVANTO also offers flexible car rental services. You can choose
                     monthly car rental packages, unlimited kilometre packages, or even get a brand new car from AAVANTO by simply paying the first year’s insurance. Additionally, all cars in our fleet have insurance, so you’ll be safe and secure while
                     cruising down open roads.</p>
             </div>
         </div>
     </section>
-    <section class="text-gray-900 body-font">
+    <section class="text-gray-900 mobile-padding-setter body-font">
         <div class="container px-5 py-10 mx-auto">
             <div class="flex flex-col text-center w-full mb-10">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">WHY AAVANTO?</h1>
-                <h2 class="text-1xl text-indigo-500 tracking-widest font-medium title-font mb-1 text-justify">When you choose a car subscription with AAVANTO, you can enjoy:</h2>
+                <h2 class="text-1xl text-indigo-500 tracking-widest font-medium title-font mt-3 text-center">When you choose a car subscription with AAVANTO, you can enjoy:</h2>
             </div>
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 md:w-1/4">
@@ -122,7 +124,7 @@
             </div>
         </div>
     </section>
-    <section class="text-gray-900 body-font">
+    <section class="text-gray-900 mobile-padding-setter body-font">
         <div class="container px-5 py-10 mx-auto flex flex-wrap">
             <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-1/5">Pick Your Favourite Car</h2>
             <div class="md:w-4/5 md:pl-6">
@@ -133,7 +135,7 @@
             </div>
         </div>
     </section>
-    <div id="contact-form" class="contact-form">
+    <div id="contact-form" class="contact-form mobile-padding-setter">
         <section class="text-gray-800 body-font">
             <div class="container px-5 py-10 mx-auto">
                 <div class="flex flex-col text-center w-full mb-12">
@@ -177,7 +179,7 @@
         </section>
     </div>
     <footer class="bg-gray-200 text-gray-800 body-font">
-        <div class="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="container mobile-padding-setter py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10 text-gray-900 ">
                 <p class="mt-2 text-xl text-blue-900 text-center font-extrabold">AAVANTO TECHNOLOGY</p>
                 <p class="text-sm text-yellow-900 text-center">LIFE MADE EASY</p>
@@ -239,7 +241,7 @@
             </div>
         </div>
         <div class="bg-gray-800 color-lite">
-            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <div class="container mx-auto py-4 mobile-padding-setter flex flex-wrap flex-col sm:flex-row">
                 <p class="text-gray-100 text-m text-center sm:text-left color-lite">© 2022 AAVANTO TECHNOLOGY —
                     <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=contact@aavanto.com" target="__blank" rel="noopener noreferrer" class="text-gray-300 ml-1" target="_blank">@hemasagar</a>
                 </p>
