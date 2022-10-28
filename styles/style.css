@@ -32,7 +32,7 @@ body {
 
 @media only screen and (max-device-width: 600px) {
     .mobile-padding-setter {
-        padding: 0 5px;
+        padding: 0 8px;
     }
     .padding-low {
         padding: 0;
