@@ -20,11 +20,11 @@
     <meta name="Aavanto" content="www.aavanto.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="ROBOTS" content="Index, FOLLOW">
-    <meta name="keywords" content="jobs, aavanto, software training, car rentals, gardening, landscaping, abroad consulatancy, consulatancy, services, business, web Development, marriage decors, hotels, bike rentals, Tutoring">
+    <meta name="keywords" content="aavanto, aavanto tech, aavanto technology, jobs, software training, car rentals, gardening, landscaping, abroad consulatancy, consulatancy, services, business, web Development, marriage decors, hotels, bike rentals, Tutoring">
     <meta name="author" content="Arshad K">
     <meta property="og:description" content="Aavanto provides a wide range of services across different business sectors. View our services and send us your requests to receive the finest offers and fantastic services." />
     <meta property="og:url" content="https://www.aavanto.com" />
-    <meta property="og:image" content="https://aavanto.com/images/index pics/1.png" />
+    <meta property="og:image" content="https://aavanto.com/images/sharing.png" />
     <title>AAVANTO TECHNOLOGY</title>
     <link rel="shortcut icon" href="images/aavanto-logo.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -478,7 +478,7 @@
         <section style="width: 100%;" class="text-gray-800 body-font">
             <div style="width: 100%;" class="container mx-auto">
                 <div class="flex flex-col text-center w-full mb-4">
-                    <h1 class="sm:text-4xl text-2xl font-medium title-font mb-8 text-gray-900">WHAT WE DO?</h1>
+                    <h1 class="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900">WHAT WE DO?</h1>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700">Best Service, Right Time, Right People</p>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700">We Offer You Worlds' Finest Services</p>
                 </div>
@@ -797,7 +797,7 @@
                         <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
                             <div class="relative flex-grow w-full">
                                 <label for="address" class="leading-7 text-m text-gray-900">Address</label>
-                                <textarea placeholder="D-No., Street, City/Town, State" id="address" name="Address" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                <textarea required placeholder="D-No., Street, City/Town, State" id="address" name="Address" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                             </div>
                         </div>
                         <br>
@@ -1130,7 +1130,7 @@
         })
 
         function disable_services() {
-            if (document.forms["services-sheet"]["Name"].value != '' && document.forms["services-sheet"]["E-Mail"].value != '' && document.forms["services-sheet"]["Address"].value != '' && document.forms["services-sheet"]["Contact No."].value != '' && document.forms["services-sheet"]["Service Requirement"].value != '') {
+            if (document.forms["services-sheet"]["Name"].value != '' && document.forms["services-sheet"]["E-Mail"].value != '' && document.forms["services-sheet"]["Address"].value != '' && document.forms["services-sheet"]["Contact No."].value != '' && document.forms["services-sheet"]["Address"].value != '' && document.forms["services-sheet"]["Service Requirement"].value != '') {
                 document.getElementById('servicesDiv').innerHTML = '<h3 style= "width:100%;text-align:center; color:red;">Hang On!!!';
                 document.getElementById('submit-btn').disabled = true;
                 document.getElementById('submit-btn').style.background = 'rgb(109, 107, 108)';
