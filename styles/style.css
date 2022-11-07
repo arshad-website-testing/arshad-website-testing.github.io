@@ -30,12 +30,22 @@ body {
     padding: 0 60px;
 }
 
+#Home {
+    display: none;
+}
+
 @media only screen and (max-device-width: 600px) {
     .mobile-padding-setter {
         padding: 0 8px;
     }
     .padding-low {
         padding: 0;
+    }
+    #Home {
+        display: block;
+    }
+    #jssor_1 {
+        display: none;
     }
 }
 

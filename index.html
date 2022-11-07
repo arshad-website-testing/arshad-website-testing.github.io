@@ -27,7 +27,7 @@
     <meta property="og:image" content="https://aavanto.com/images/sharing.png" />
     <title>AAVANTO TECHNOLOGY</title>
     <link rel="shortcut icon" href="images/aavanto-logo.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" rel="stylesheet">
     <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -393,7 +393,9 @@
             </mask>
         </defs>
     </svg>
-    <div id="Home"></div>
+    <div id="Home">
+        <img src="images/mobile_intro.png" alt="home">
+    </div>
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" id="mobile-height-top" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -439,41 +441,61 @@
     <script type="text/javascript">
         jssor_1_slider_init();
     </script>
-    <section class="text-gray-900 mobile-padding-setter body-font about-aavanto">
-        <div class="container text-justify margin-padding mx-auto flex flex-col in-about-aavanto ">
-            <div id="about-aavanto" class="mx-auto mobile-padding-setter">
-                <h1 class="sm:text-4xl text-2xl font-medium title-font text-gray-900 mt-10 text-center">ABOUT AAVANTO</h1>
-                <div class="rounded-lg h-64 overflow-hidden mt-10">
-                    <img alt="content" class="object-cover object-center h-full w-full" src="images/office.png">
-                </div>
-                <div class="flex flex-col padding-low sm:flex-row mt-10">
-                    <div class="sm:w-1/4 text-center sm:pr-5 sm:py-5">
-                        <!-- <div class="w-24 h-24 rounded-full inline-flex items-center">
-                            <img alt="team" class="w-24 h-24 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/index pics/hemasagar.png">
-                        </div> -->
-                        <div class="flex flex-col items-center text-center justify-center">
-                            <h2 class="font-bold title-font mt-4 text-gray-900 text-2xl">AAVANTO TECHNOLOGIES</h2>
-                            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-                            <h2 class="font-medium title-font text-gray-900 text-lg">LIFE MADE EASY</h2>
-                        </div>
-                        <div style="padding:5px;" class="border-2 mt-4 ceo border-indigo-500 rounded-md	">
-                            <h2 class="font-semibold title-font mt-2 text-gray-900 text-xl">HEMA SAGAR T</h2>
-                            <h2 style="width:83%;" class="font-medim text-right title-font text-gray-900 text-lg mb-2"> - CEO</h2>
-                            <!-- <p class="text-base font-bold">CEO OF <br> AAVANTO TECHNOLOGIES</p> -->
+
+    <div class="bg-white relative pt-16 pb-20 lg:pt-16 dark:bg-gray-900">
+        <div class="relative xl:container m-auto px-6 md:px-12 lg:px-6">
+            <h1 class="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">What We Offer ?<br class="lg:block hidden"> <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300">About Aavanto</span></h1>
+            <div class="lg:flex">
+                <div class="text-justify relative md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto lg:text-left lg:mr-auto lg:w-7/12">
+                    <p class="text-justify sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
+                        Companies recognize the need to upskill their employees, but the problem is that it takes too much time, effort and money. They also have to deal with the fact that employees are resistant to change. <br> <br> We're here to take
+                        all these worries away. By getting Industry-Ready Certification, you're already about half way there. All you need to do is complete our programs and you'll be well on your way to a successful career in any industry. <br> <br>                        We've made it our mission to bridge the gap between industry & academia by rapidly building industry relevant skills in people. For the first time in India, we've introduced Aavanto Industry-Ready Certification (IRC), which represents
+                        your industry readiness. We've designed programs to help anyone gear up for 4-5 years of accelerated skill.
+                    </p>
+                    <div class="w-full" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="px-2 lg:w-1/2 md:w-full w-full">
+                            <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/aavanto-logo.png">
+                                <div class="flex-grow">
+                                    <h2 class="text-gray-100 title-font font-medium">Hema Sagar T</h2>
+                                    <p class="text-gray-200">Founder & CEO</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="sm:w-3/4 sm:pl-8 sm:py-8 sm:border-l border-gray-500 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 sm:text-left pb-10 text-justify">
-                        <p class="leading-relaxed text-m text-setter text-justify">&emsp;&emsp; Companies recognize the need to upskill their employees, but the problem is that it takes too much time, effort and money. They also have to deal with the fact that employees are resistant to change. <br> &emsp;&emsp;We're
-                            here to take all these worries away. By getting Industry-Ready Certification, you're already about half way there. All you need to do is complete our programs and you'll be well on your way to a successful career in any industry.
-                            <br> &emsp;&emsp;We've made it our mission to bridge the gap between industry & academia by rapidly building industry relevant skills in people. For the first time in India, we've introduced Aavanto Industry-Ready Certification
-                            (IRC), which represents your industry readiness. We've designed programs to help anyone gear up for 4-5 years of accelerated skill.
-                        </p>
+                    <span class="block mt-4 mb-0  font-semibold text-gray-500 dark:text-gray-400"> &emsp; Follow Us @</span>
+                    <div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
+                        <a target="__blank" aria-label="add to slack" href="https://twitter.com/aavanto_" class="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30">
+                            <div class="flex justify-center space-x-4">
+                                <img class="w-6 h-6" src="images/socila media/twitter.png" alt="twitter logo" loading="lazy" width="128" height="128">
+                                <span class="hidden font-medium md:block dark:text-white">Twitter</span>
+                            </div>
+                        </a>
+                        <a target="__blank" aria-label="add to chat" href="https://www.facebook.com/profile.php?id=100084467176273" class="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30">
+                            <div class="flex justify-center space-x-4">
+                                <img class="w-6 h-6" src="images/socila media/fb.png" alt="chat logo" loading="lazy" width="128" height="128">
+                                <span class="hidden font-medium md:block dark:text-white">Facebook</span>
+                            </div>
+                        </a>
+                        <a target="__blank" aria-label="add to zoom" href="https://www.youtube.com/channel/UCBuPeZXHhmWh_08SLxmdlmQ" class="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:border-blue-300/30">
+                            <div class="flex justify-center space-x-4">
+                                <img class="w-6 h-6" src="images/socila media/youtube.png" alt="chat logo" loading="lazy" width="128" height="128">
+                                <span class="hidden font-medium md:block dark:text-white">Youtube</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="mt-4 md:mt-0 -right-10 lg:w-7/12">
+                    <div class="relative w-full">
+                        <div class="absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-sky-500 to-cyan-300 blur-3xl"></div>
+                        <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/globalization-cuate.svg" class="relative w-full" alt="wath illustration" loading="lazy" width="300" height="260">
                     </div>
                 </div>
             </div>
         </div>
-        <br> <br>
-    </section>
+    </div>
     <div id="services" class="our-services py-10 text-justify mb-4 mobile-padding-setter">
         <section style="width: 100%;" class="text-gray-800 body-font">
             <div style="width: 100%;" class="container mx-auto">
@@ -871,22 +893,61 @@
                     <div class="p-4 md:w-1/2 w-full">
                         <div class="rounded-xl h-full bg-gray-800 p-6">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-white mb-4" viewBox="0 0 975.036 975.036">
-                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                </svg>
+                          <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                                 </svg>
                             <p class="leading-relaxed mb-4 text-justify">I joined Aavanto Software Training and through this Training I learnt Full Stack Development. They teach us trending tecnologies and also they help us during Interviews by conducting Mock Interviews.</p>
                             <a class="inline-flex items-center">
                                 <div class="w-24 h-24 rounded-full inline-flex items-center">
                                     <img alt="team" class="w-24 h-24 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/index pics/vinay.png">
                                 </div>
                                 <span class="flex-grow flex flex-col pl-4">
-                    <span class="title-font font-medium text-gray-100">MAKANA VINAY</span>
+                          <span class="title-font font-medium text-gray-100">MAKANA VINAY</span>
                                 <span class="text-gray-200 text-m">Placed at Mount Blue</span>
                                 </span>
                             </a>
                         </div>
                     </div>
+
+                    <div id="MoreTestimonials" style="display: none;" class="extra-testimonials">
+
+                        <div class="p-4 md:w-1/2 w-full">
+                            <div class="rounded-xl h-full bg-gray-800 p-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-white mb-4" viewBox="0 0 975.036 975.036">
+                                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                                 </svg>
+                                <p class="leading-relaxed mb-4 text-justify">I got placed in Mount Blue through Aavanto Jobs. Through their online tutoring classes, I learned Java and soft skills. I want to express my gratitude to Mr.Hema Sagar and Team Aavanto for their assistance during this placement
+                                    process.
+                                </p>
+                                <a class="inline-flex items-center">
+                                    <div class="w-24 h-24 rounded-full inline-flex items-center">
+                                        <img alt="team" class="w-24 h-24 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/index pics/AKHILA.png">
+                                    </div>
+                                    <span class="flex-grow flex flex-col pl-4">
+                          <span class="title-font font-medium text-gray-100">SIDDHILINGAM AKHILA</span>
+                                    <span class="text-gray-200 text-m">Placed at Mount Blue</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <br>
+                <section id="MoreTestimonials-BTN" class="text-gray-600 body-font">
+                    <div class="container px-5 py-2 mx-auto">
+                        <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+                            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 text-center ">Click Here To View More Testimonials From Our Clients</h1>
+                            <button onclick="show()" class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg sm:mt-0">VIEW</button>
+                        </div>
+                    </div>
+                </section>
+                <section onclick="hide()" style="display: none;" id="MoreTestimonials-HID" class="text-gray-600 body-font">
+                    <div class="container px-5 mx-auto">
+                        <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+                            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Click Here To Show Less Testimonials</h1>
+                            <button onclick="hide()" class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg sm:mt-0">Show Less</button>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
     </div>
@@ -912,7 +973,7 @@
             <div id="FeedBack" class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
                 <h2 class="text-4xl font-medium title-font text-gray-900 mb- text-center flex-center">FEEDBACK</h2>
                 <p class="leading-relaxed mb-5 text-gray-600 flex-center">Your Feedback Matters To Us!</p>
-                <form method="POST" onsubmit="return disable_func()" name="feedback-sheet">
+                <form method="POST" onsubmit="return disable_func_feedback()" name="feedback-sheet">
                     <div class="relative mb-4">
                         <label for="name" class="leading-7 text-lg text-gray-800">Name</label>
                         <input required type="text" id="Name" name="Name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
@@ -925,7 +986,7 @@
                         <label for="message" class="leading-7 text-lg text-gray-800">Message</label>
                         <textarea required id="message" name="Message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                     </div>
-                    <button required type="submit" value="submit" id="submit-btn" name="submit" ; class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                    <button required type="submit" value="submit" id="submit-btn-feedback" name="submit" ; class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
                     <p id="mydiv" class="leading-relaxed mb-8"></p>
                 </form>
             </div>
@@ -997,7 +1058,7 @@
         <div class="bg-gray-800 color-lite">
             <div class="container mx-auto py-4 mobile-padding-setter flex flex-wrap flex-col sm:flex-row">
                 <p class="text-gray-100 text-m text-center sm:text-left color-lite">© 2022 AAVANTO TECHNOLOGY —
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=contact@aavanto.com" target="__blank" rel="noopener noreferrer" class="text-gray-300 ml-1" target="_blank">@hemasagar</a>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;to=contact@aavanto.com" target="__blank" rel="noopener noreferrer" class="text-gray-300 ml-1">@hemasagar</a>
                 </p>
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
               <a class="text-gray-500 cursor-link" target="__blank" href="https://www.facebook.com/profile.php?id=100084467176273">
@@ -1006,7 +1067,7 @@
                 </svg>
               </a>
               <a class="ml-3 text-gray-500 cursor-link" target="__blank" href="https://wa.me/918639005305">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
                 </svg>
               </a>
@@ -1075,7 +1136,7 @@
         }
 
         function showchatboxtime() {
-            setTimeout(launchbox, 5000)
+            setTimeout(launchbox, 10000)
         }
 
         function launchbox() {
@@ -1085,8 +1146,10 @@
 
         function sendmsg() {
             var msg = document.getElementById('whats-in').value;
-            var relmsg = msg.replace(/ /g, "%20");
-            window.open('https://api.whatsapp.com/send?phone=918639005305&text=' + relmsg, '_blank');
+            if (msg != "") {
+                var relmsg = msg.replace(/ /g, "%20");
+                window.open('https://api.whatsapp.com/send?phone=918639005305&text=' + relmsg, '_blank');
+            }
 
         }
     </script>
@@ -1094,11 +1157,11 @@
 
 
     <script>
-        function disable_func() {
+        function disable_func_feedback() {
             if (document.forms["feedback-sheet"]["Name"].value != '' && document.forms["feedback-sheet"]["E-Mail"].value != '' && document.forms["feedback-sheet"]["Message"].value != '') {
                 document.getElementById('mydiv').innerHTML = '<h3 style= "width:100%;text-align:center;color:red;">Wait !!!';
-                document.getElementById('submit-btn').disabled = true;
-                document.getElementById('submit-btn').style.background = 'rgb(109, 107, 108)';
+                document.getElementById('submit-btn-feedback').disabled = true;
+                document.getElementById('submit-btn-feedback').style.background = 'rgb(109, 107, 108)';
                 return true;
             }
         }
@@ -1179,6 +1242,18 @@
                 }
             });
         });
+
+        function show() {
+            showInfo = document.getElementById("MoreTestimonials").style.display = "block";
+            showInfo = document.getElementById("MoreTestimonials-HID").style.display = "block";
+            showInfo = document.getElementById("MoreTestimonials-BTN").style.display = "none";
+        }
+
+        function hide() {
+            showInfo = document.getElementById("MoreTestimonials").style.display = "none";
+            showInfo = document.getElementById("MoreTestimonials-HID").style.display = "none";
+            showInfo = document.getElementById("MoreTestimonials-BTN").style.display = "block";
+        }
     </script>
 </body>
 
