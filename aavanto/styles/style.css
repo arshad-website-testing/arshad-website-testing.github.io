@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 490;
+}
+
+.mobile-padding-setter {
+    padding: 0 90px;
+}
+
+.padding-low {
+    padding: 0 60px;
+}
+
+#Home {
+    display: none;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .mobile-padding-setter {
+        padding: 0 8px;
+    }
+    .padding-low {
+        padding: 0;
+    }
+    #Home {
+        display: block;
+    }
+    #jssor_1 {
+        display: none;
+    }
+}
+
+.color-dark {
+    color: rgb(8, 0, 255);
+}
+
+.color-lite {
+    color: rgb(255, 255, 255);
+}
+
+.bg-color-dark {
+    background-color: rgb(8, 0, 255);
+}
+
+.bg-color-lite {
+    background-color: rgb(255, 202, 178);
+}
+
+.margin-border {
+    margin: 10px 0;
+    border: 1px solid rgb(157, 157, 157);
+    border-radius: 3px;
+}
+
+.font-manage {
+    font-size: 45px;
+}
+
+.flex-center {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.responsive-paras {
+    width: 70%;
+    margin: 10px;
+    text-align: justify;
+}
+
+.about-aavanto {
+    background-image: url("../images/intro-desktop.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content
+}
+.content-car-rentals {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/testimonials_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content
+}
+
+.bg-adder-testimonials {
+    background-image: url("../images/testimonials_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content
+}
+
+.animate {
+    animation: scale 1.5s both;
+}
+
+@keyframes scale {
+    5% {
+        transform: scale(0.6);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate2 {
+    animation: opacity 0.5s both;
+}
+
+@keyframes opacity {
+    10% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro-text {
+    font-size: 50px;
+    padding: 30px;
+}
+
+.cursor-link {
+    cursor: pointer;
+}
+
+.flex-center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.scroll-left {
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    width: 100%;
+}
+
+.scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    /* Starting position */
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 15s linear infinite;
+}
+
+
+/* Move it (define the animation) */
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .intro-part {
+        background-image: url("../images/intro-mobile.png");
+        width: 100%;
+    }
+    .responsive-paras {
+        width: 95%;
+        margin: 5px;
+    }
+    .flex-center-row {
+        flex-direction: column;
+    }
+    .intro-text {
+        font-size: 25px;
+        margin: 15px;
+    }
+    .not-in-mobile {
+        display: none;
+    }
+    .mobile-padding {
+        padding: 5px;
+    }
+    .font-manage {
+        font-size: 25px;
+    }
+    .width-manage {
+        width: 95%;
+    }
+    .text-setter {
+        font-size: medium;
+        padding-bottom: 10px;
+    }
+    .margin-padding {
+        margin: 5px;
+        padding: 10px;
+        padding-right: 20px;
+    }
+    .chat-in {
+        width: 75%;
+    }
+    #send-btn {
+        width: 20%;
+    }
+}
+
+
+/* SUB PAGES STYLE  */
+
+.car-intro-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64vh;
+}
+
+.car-intro-img #car-pic-1,
+.car-intro-img #car-pic-2 {
+    height: 100%;
+}
+
+.wedding-intro-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-in-desktop {
+    display: none;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.FAQ-TopClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 100%;
+}
+
+.FYI-info {
+    padding: 10px 30px;
+    margin: 10px 30px;
+    width: 70%;
+}
+
+@media only screen and (max-width: 700px) {
+    .car-intro-img {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        flex-flow: column-reverse;
+    }
+    .car-intro-img #car-pic-1,
+    .car-intro-img #car-pic-2 {
+        width: fit-content;
+        height: 27vh;
+    }
+    .FYI-info {
+        padding: 3px;
+        margin: 3px;
+        width: 97%;
+    }
+    .not-in-desktop {
+        display: block;
+    }
+}
+
+#send-btn:hover {
+    cursor: pointer;
+}
+
+#close-box:hover {
+    cursor: pointer;
+}
+
+body {
+    width: 100%
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#whats-chat {
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    height: auto;
+    width: auto;
+    background: #25D366;
+    padding: 12.5px;
+    border-radius: 50px;
+}
+
+#whats-chat:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 15px #ccc;
+    bottom: 11%;
+}
+
+
+/*===============================*/
+
+#chat-box {
+    position: fixed;
+    right: -500px;
+    bottom: 18%;
+    width: 250px;
+    height: 200px;
+    transition: all .5s;
+}
+
+#chat-top {
+    width: 100%;
+    line-height: 2;
+    background: rgb(18, 140, 126);
+    color: white;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px;
+}
+
+#chat-msg {
+    background: #ece5dd;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 25px -10px #999;
+}
+
+#chat-msg p {
+    font-size: 14px;
+    padding: 15px;
+    background: white;
+    border-radius: 0 30px 30px 20px;
+    margin-bottom: 10px;
+}
+
+#chat-form {
+    display: flex;
+}
+
+.chat-in {
+    width: 80%;
+}
+
+#chat-form input {
+    border-radius: 5px 0 5px 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 2;
+}
+
+#send-btn {
+    width: 20%;
+    padding: 0 5px;
+}
+
+#chat-top-right {
+    float: right;
+    padding: 5px 0;
+}
+
+#chat-box:after {
+    content: '';
+    position: absolute;
+    top: 58%;
+    left: 90%;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #ece5dd;
+}
+
+.right {
+    float: right
+}
+
+.clear {
+    clear: both
+}
