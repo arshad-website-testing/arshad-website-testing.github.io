@@ -82,3 +82,21 @@ body {
         display: block;
     }
 }
+
+#whats-chat {
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    height: auto;
+    width: auto;
+    background: #57e6ff;
+    padding: 12.5px;
+    border-radius: 50px;
+    z-index: 9999;
+}
+
+#whats-chat:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 15px rgb(0, 213, 255);
+    bottom: 11%;
+}
